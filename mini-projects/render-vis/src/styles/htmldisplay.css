@@ -1,0 +1,28 @@
+.wdisplay {
+  width: 500px;
+  min-height: 600px;
+  border: solid 2px gray;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+#htmlpreview {
+  position: relative;
+  top: 20px;
+}
+.html_area {
+  width: 500px;
+  min-height: 600px;
+}
+.blink {
+  background-color: rgb(120, 205, 233);
+  animation: blink-bg 1s infinite;
+}
+@keyframes blink-bg {
+  0%,
+  100% {
+    background-color: rgb(120, 205, 233);
+  }
+  50% {
+    background-color: transparent;
+  }
+}

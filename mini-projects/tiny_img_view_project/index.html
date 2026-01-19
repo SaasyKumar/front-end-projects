@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Viewer</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="displayArea"
+      ondrop="drop_handler(event)"
+      ondragover="dragover_handler(event)"
+    >
+      <label for="inputImage" id="displayLabel"
+        ><img
+          id="display-image"
+          src="https://static.vecteezy.com/system/resources/previews/009/992/364/non_2x/add-icon-sign-symbol-design-free-png.png"
+          alt="Upload Image"
+          title="Upload image Or Drag and Drop"
+      /></label>
+      <input
+        type="file"
+        id="inputImage"
+        name="inputImage"
+        title="Upload images"
+        accept="image/*"
+        multiple
+      />
+    </div>
+    <div
+      class="slide"
+      ondrop="drop_handler(event)"
+      ondragover="dragover_handler(event)"
+    >
+      <div id="slideInput" class="container">
+        <input
+          id="sInput"
+          type="file"
+          name="inputImage"
+          title="Upload images"
+          accept="image/*"
+          multiple
+        />
+      </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <!-- adding <script></script> in body is better -->
+  </body>
+</html>

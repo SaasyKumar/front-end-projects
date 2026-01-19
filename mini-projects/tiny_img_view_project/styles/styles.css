@@ -1,0 +1,142 @@
+body {
+  align-items: center;
+  /* background-image: url("https://images.pling.com/img/00/00/61/82/97/1759995/2560x1440-1649535879576.jpeg"); */
+  background-color: #1d1b1bf5;
+}
+.displayArea {
+  align-items: center;
+  margin: 3% 20% 3%;
+  align-self: center;
+  color: aqua;
+  align-items: center;
+  height: 480px;
+  width: 60%;
+}
+#display-image {
+  object-fit: contain;
+  width: 90%;
+  height: 84%;
+  margin: 0% 3%;
+}
+input {
+  opacity: 0;
+  font-size: 0px;
+}
+#slideInput input {
+  position: absolute;
+  bottom: 9px;
+  opacity: 0;
+  font-size: 0px;
+  /* height: 150px; */
+  /* width: 150px; */
+  height: 115px;
+  width: 196px;
+  cursor: pointer;
+}
+.slide {
+  margin: 0% 4.5%;
+  position: fixed;
+  bottom: 3%;
+  z-index: 3;
+  width: 90%;
+  height: 133px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  background: #1c1c1c url("https://assets.pics.io/img/filmStripPlaceholder.svg")
+    repeat-x left top/auto 100%;
+}
+.container {
+  height: 131px;
+  width: 198px;
+  flex-shrink: 0;
+}
+.container img {
+  cursor: pointer;
+  border: solid 1px;
+  border-color: transparent;
+  flex: 0 0 auto;
+  object-fit: contain;
+  position: absolute;
+  height: 130px;
+  width: 191px;
+  /* counter-increment: countSomeImgScrollbar; */
+  margin: 0px 1px;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.container img:hover {
+  border-color: aliceblue !important;
+}
+.container img:active {
+  border-color: green !important;
+}
+
+div.crossBar {
+  position: relative;
+  top: 1px;
+  left: 2px;
+  width: inherit;
+  height: 20px;
+  display: block;
+  opacity: 75%;
+}
+.crossBar label {
+  position: relative;
+  text-overflow: ellipsis;
+  display: inline-block;
+  overflow: hidden;
+  width: 173px;
+  height: 20px;
+  background-color: black;
+  color: wheat;
+  font-size: smaller;
+  text-align: center;
+}
+.crossBar button {
+  position: absolute;
+  font-size: 14px;
+  height: 20px;
+  width: 20px;
+  background-color: black;
+  padding: 0% 0%;
+  color: #cd3535;
+  border: 0px;
+  right: 7px;
+  /* left: 173px;
+    bottom: 139px; */
+}
+.crossBar button:hover {
+  color: black;
+  background-color: #cd3535;
+}
+#slideInput::before {
+  content: "+";
+  display: block;
+  position: relative;
+  left: 38%;
+  top: 32%;
+  font-size: 40px;
+  background-color: #80808070;
+  width: 48px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 1000;
+}
+
+#slideInput:hover::before {
+  background-color: gold;
+}
+#slideInput:active::before {
+  background-color: goldenrod;
+}
+#slideInput {
+  background: #1c1c1c url("https://assets.pics.io/img/filmStripPlaceholder.svg")
+    repeat-x left top/auto 100%;
+}
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+  background-color: transparent;
+}
