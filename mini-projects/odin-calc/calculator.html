@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator">
+        <div class="left">
+            <div id="display"><span>0</span></div>
+            <div id="numpad">
+                <!-- <button value="()" disabled="true">()</button> -->
+                <button value="1">1</button>
+                <button value="2">2</button>
+                <button value="3">3</button>
+                <button value="4">4</button>
+                <button value="5">5</button>
+                <button value="6">6</button>
+                <button value="7">7</button>
+                <button value="8">8</button>
+                <button value="9">9</button>
+                <button value="AC">AC</button>
+                <button value="0">0</button>
+                <button value="." id="decimal">.</button>
+                <button value="backspace">DEL</button>
+            </div>
+        </div>
+        <div id="operations">
+            <button operation="add">+</button>
+            <button operation="subtract">-</button>
+            <button operation="multiply">×</button>
+            <button operation="divide">÷</button>
+            <!-- <button value="%">%</button> -->
+            <button operation="equal">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <!-- <script src="main.ts"></script> -->
+</body>
+</html>

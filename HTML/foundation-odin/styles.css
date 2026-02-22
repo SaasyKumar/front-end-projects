@@ -1,0 +1,136 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.header,
+.footer{
+    background-color: #1f2937;
+    color: #f9faf8cf;
+    padding: 20px 10%;
+    font-size: 16px;
+}
+.footer{
+    margin-top: auto;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #f9faf8cf;
+}
+.header-two{
+    display: flex;
+    justify-content: space-between;
+    gap:10px;
+}
+.awesome-site,
+.image{
+    flex:1;
+}
+.awesome-site h1,
+.awesome-site p{
+    margin: 0;
+}
+.awesome-site h1,
+.navbar span{
+    color: #f9faf8;
+}
+.image{
+    text-align: center;
+    align-content: center;
+    background-color: grey;
+    margin: 10px;
+}
+.button{
+    display: inline-block;
+    margin-top: 2px;
+    padding: 3px 30px;
+    background-color: rgb(0, 102, 255);
+    border-radius: 5px;
+    color: #f9faf8;
+}
+/* HEADER and FOOTER over */
+.body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.body h1{
+    text-align: center;
+}
+.random{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 25px;
+    margin: 15px 25%;
+}
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.square{
+    border: solid 2px rgb(0, 149, 255);
+    flex: 1;
+    border-radius: 5px;
+}
+.container p{
+    text-align: center;
+}
+/* Wrap done */
+.quote{
+    flex: 1;
+    background-color: #e5e7eb;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25%;
+}
+.quote p{
+    color: #585c60;
+    text-align: center;
+}
+.thor{
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 900;
+}
+/* Quote done */
+.sign-up{
+    flex: 0;
+    background-color: rgb(0, 149, 255);
+    color: #f9faf8;
+    /* layout */
+    margin: 30px 175px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.sign-up h1,
+.sign-up p{
+    margin: 0;
+    text-align: unset;
+}
+.line{
+    background-color: inherit;
+    border: solid 1px #f9faf8;
+    align-self: center;
+}

@@ -1,0 +1,37 @@
+body{
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    height: calc(100%/16);
+    width: calc(100%/16);
+    border: solid 1px gray;
+}
+#container{
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    /* Height is also needed to acheive this */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* TODO: Important */
+}
+.hover{
+    /* background-color: black; */
+}
+
+#header{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 5px;
+}
+#inputbutton{
+    padding: 2px 10px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+aside{
+    position: fixed;
+    top: 10px;
+}
+.list{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    font-size: 20px;
+}
+.main-img{
+    margin: 0 auto;
+    width: 400px;
+}
+.main-img img{
+    width: 400px;
+    height: 400px;
+}
