@@ -1,0 +1,12 @@
+#root {
+  height: 100vh;
+  text-align: center;
+}
+.full{
+  height: 100vh;
+}
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid black;
+}
