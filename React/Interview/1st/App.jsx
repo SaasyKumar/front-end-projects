@@ -4,10 +4,10 @@ import "./App.css";
 function App() {
   const [count, updateCount] = useState(0);
   const [history, updateHistory] = useState([]);
-  let tabular = [];
+  const tabular = [];
   if (history.length > 0) {
     // TODO: can't push only open tag , careful while using arrow needs return or one line no {}
-    for (let i = 0; i < history.length - 3; i += 3) {
+    for (let i = 0; i < history.length; i += 3) {
       tabular.push(
         <tr key={i}>
           {history.slice(i, i + 3).map((item, index) => {
@@ -20,11 +20,13 @@ function App() {
   }
   function updateStateHistory(operation) {
     // TODO: bestu
+    let newValue = calculate(operation);
+    updateCount(newValue);
     updateHistory((prevHistory) => [
       ...prevHistory,
       operation,
       count,
-      calculate(operation),
+      newValue,
     ]);
   }
   function calculate(operation) {
@@ -43,7 +45,6 @@ function App() {
         value /= 2;
         break;
     }
-    updateCount(value);
     return value;
   }
 

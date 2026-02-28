@@ -1,6 +1,6 @@
 import DynamicForm from "./DynamicForm";
 export default function WorkForm({callback,state_obj}){
-    var details=[
+    const details=[
         {
             "id":"job",
             "content": "Job Title",
@@ -33,7 +33,7 @@ export default function WorkForm({callback,state_obj}){
         },
     ];
     let out = state_obj.map(item=>
-        <DynamicForm state={item} input_details={details} callback={callback}></DynamicForm>
+        <DynamicForm state={item} input_details={details} callback={callback} key="work"></DynamicForm>
     )
     return(
         <>

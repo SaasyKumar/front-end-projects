@@ -39,7 +39,6 @@ export default function GenerateCV({form}){
             <div>Experience: {form["experience"]} years</div>
             <h1>Education and Qualification</h1>
             {education}
-            <h1></h1>
             <h1>Work Experience</h1>
             {job}
         </>

@@ -1,6 +1,6 @@
 import DynamicForm from "./DynamicForm";
 export default function SchoolForm({callback,state_obj}){
-    var details=[
+    const details=[
         {
             "id":"degree",
             "content": "Degree",
@@ -27,7 +27,7 @@ export default function SchoolForm({callback,state_obj}){
             "type": "month"
         }
     ];
-    let out = state_obj.map(item=><DynamicForm state={item} input_details={details} callback={callback}></DynamicForm>);
+    let out = state_obj.map(item=><DynamicForm state={item} input_details={details} callback={callback} key="school"></DynamicForm>);
     return(
         <>
             {out}

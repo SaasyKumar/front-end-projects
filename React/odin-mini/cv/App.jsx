@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SchoolForm from "./SchoolForm";
 import WorkForm from "./WorkForm";
-import GenerateCV from "./generateCV";
+import GenerateCV from "./GenerateCV";
 
 const emptyForm = {
     "first_name":"",
@@ -9,7 +9,6 @@ const emptyForm = {
     "email":"",
     "phone_number":"",
     "age":0,
-    "experience":0,
     "education":[
         {
             "degree":"",
@@ -63,7 +62,7 @@ export default function App(){
     function editData(){
         setSubmitState(false);
     }
-    let details =[
+    const details =[
         {
             "id":"first_name",
             "content": "First Name",
@@ -90,11 +89,7 @@ export default function App(){
             "type": "number"
         }
     ];
-    let form =[];
-    function generateInputField({id,content,type}){
-        return <div key={id}><span>{content}</span><input type={type} id={id} onChange={updateFormData.bind(null,id)} value={formData[id]}></input></div>
-    }
-    form = details.map((item)=> generateInputField(item));
+    const form = details.map((item)=> <div key={item.id}><span>{item.content}</span><input type={item.type} id={item.id} onChange={updateFormData.bind(null,item.id)} value={formData[item.id]}></input></div>);
     return(
         isSubmitted ?(
             <>

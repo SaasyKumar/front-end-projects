@@ -1,17 +1,9 @@
 import { useState } from "react";
 export default function DynamicForm({state,input_details,callback}){
     console.log(state);
-    const [,setFormData] = useState(state);
-    var details = input_details;
+    const details = input_details;
     function updateFormData(id,ev){
-        setFormData(prev=>{
-            const obj = {
-                ...prev,
-                [id]:ev.target.value
-            };
-            callback(obj);
-            return obj;
-        })
+        callback({...state,[id]:ev.target.value})
     };
     let form =[];
     form = details.map((item)=>{

@@ -8,7 +8,7 @@ function List(props){
   if( props.animals.length == 0){
     return <div>No values inside list</div>
   }
-  var list = props.animals.map(animal=><li key={animal}>{animal}</li>)
+  let list = props.animals.map(animal=><li key={animal}>{animal}</li>)
   return(
     <ul>
       {list}
