@@ -1,7 +1,7 @@
-header{
-    display: flex;
-    justify-content: space-between;
+header {
+  display: flex;
+  justify-content: space-between;
 }
-.game-name{
-    font-size: 20px;
+.game-name {
+  font-size: 20px;
 }
